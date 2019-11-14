@@ -2,7 +2,7 @@ import sys
 for f in sys.argv:
  a=[0]*29;i=k=0
  while k<len(f):
-  c=f[k];j=a[i];a[i]+=(c=='+')-(c=='-');i+=c=='>';i-=c=='<';o=1
+  c=f[k];j=a[i];a[i]+=(c=='+')-(c=='-');i+=(c=='>')-(c=='<');o=1
   if'.'==c:print(chr(j),end="")
   if'['==c:
    if j:a+=[k];o=0
