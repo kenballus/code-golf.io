@@ -1,5 +1,6 @@
-for j in range(2,98):
- a=1;
- for i in range(2,j):
-  if j%i<1:a=0
- if a:print(j)
+import sys
+for s in sys.argv[1:]:
+ f=1
+ for j in range(65,91):
+  if chr(j)not in s and chr(j).lower()not in s:f=0
+ if f:print(s)
